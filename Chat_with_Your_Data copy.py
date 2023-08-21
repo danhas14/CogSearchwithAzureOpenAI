@@ -11,8 +11,6 @@ from PIL import Image
 
 
 
-os.environ["AZURE_OPENAI_KEY"] = ""
-os.environ["OPENAI_API_KEY"] = ""
 openai.api_type = "azure"
 openai.api_base = "https://*.openai.azure.com/" #fill in your Azure OpenAI instance
 openai.api_version = "2023-03-15-preview"
