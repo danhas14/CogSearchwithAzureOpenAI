@@ -18,7 +18,7 @@ openai.api_key = ""
 
 
 #Cognitive Search Connection
-search_endpoint = "https://dhcogsearch.search.windows.net"
+search_endpoint = "https://*.search.windows.net" #Use your Cog search name where * is
 search_endpoint_for_creating_index = "https://*.search.windows.net/indexes/purview-vector-index/docs/search?api-version=2023-07-01-Preview" #Use your Cog search name where * is
 search_api_key ="" #Cog search admin key
 openai_api_key = openai.api_key
