@@ -31,12 +31,12 @@ def createSearchRequest(user_question):
     )
     embeddings = response['data'][0]['embedding']
 
-    #This is the search that will be sent to Azure Cog search in JSON format
+    #This is the search that will be sent to Azure Cog search in JSON format using a hybrid vector search 
     search_json = {
         "vector": {
             "value": embeddings,
             "fields": "contentVector, titleVector",
-            "k": 2
+            "k": 2 #This returns the top 2 search results
         },
         "search": f"{user_question}",
         "select": "title, content, path",
